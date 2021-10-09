@@ -100,7 +100,8 @@ form {
       margin: 50px 100px;
       width: unset; } }
   .info img {
-    max-width: 100%; }
+    max-width: 100%;
+    margin: 10px 0; }
     @media (min-width: 640px) {
       .info img {
         max-width: 50%; } }
@@ -137,6 +138,7 @@ form {
     font-family: Courier;
     background-color: black;
     color: white;
-    padding: 1rem; }
+    padding: 1rem;
+    overflow: scroll; }
   .info li {
     cursor: pointer; }
