@@ -1,0 +1,142 @@
+body {
+  font-family: "LatoWeb", sans-serif;
+  font-size: 20px; }
+  body h1, body h2, body h3, body h4, body h5, body h5 {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 900; }
+  body a {
+    color: black;
+    font-weight: 900; }
+
+body {
+  background-color: #41bac1;
+  position: relative; }
+  body .site__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-sizing: border-box; }
+    @media (min-width: 1200px) {
+      body .site__container {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        margin: 50px; } }
+    body .site__container .logo__container {
+      text-align: center; }
+      @media (min-width: 1200px) {
+        body .site__container .logo__container {
+          margin-left: 50px; } }
+      body .site__container .logo__container a {
+        width: 100%;
+        display: block; }
+        body .site__container .logo__container a .logo__image {
+          width: 100%;
+          max-width: 500px;
+          max-height: 500px; }
+      body .site__container .logo__container .supplementary__container {
+        text-align: center; }
+        @media (min-width: 1200px) {
+          body .site__container .logo__container .supplementary__container {
+            margin: 0 50px 25px 25px;
+            text-align: right;
+            box-sizing: border-box; } }
+
+input {
+  width: 100%;
+  font-family: "Courier New", Courier, monospace;
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box; }
+
+button {
+  background-color: #f9e53a;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  cursor: pointer; }
+  button:hover {
+    background-color: black;
+    color: white; }
+
+form {
+  text-align: right; }
+
+.hover-yellow:hover {
+  background-color: #f9e53a; }
+
+.hover-purple:hover {
+  background-color: #642580; }
+
+.icons {
+  display: inline-block;
+  text-align: center;
+  margin-top: 25px; }
+  @media (min-width: 1200px) {
+    .icons {
+      margin-top: 0;
+      text-align: right;
+      width: 100%; } }
+  .icons .icon__container {
+    display: inline-block; }
+    @media (min-width: 1200px) {
+      .icons .icon__container {
+        margin: 25px; } }
+    .icons .icon__container a {
+      display: block; }
+      .icons .icon__container a .icon__image {
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        border-radius: 20px; }
+
+.info {
+  box-sizing: border-box;
+  width: calc(100% - 10px); }
+  @media (min-width: 1200px) {
+    .info {
+      margin: 50px 100px;
+      width: unset; } }
+  .info img {
+    max-width: 100%; }
+    @media (min-width: 640px) {
+      .info img {
+        max-width: 50%; } }
+    @media (min-width: 1200px) {
+      .info img {
+        max-width: 100%; } }
+  .info h2 {
+    background-color: #f9e53a;
+    margin-block-start: 5rem;
+    padding: 1rem; }
+  .info h3 {
+    margin-block-start: 3rem;
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem; }
+  .info blockquote {
+    background-color: #642580;
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 4rem;
+    margin-right: 0;
+    position: relative; }
+    .info blockquote a {
+      color: white; }
+      .info blockquote a:hover {
+        background-color: black; }
+    .info blockquote::before {
+      content: "?";
+      position: absolute;
+      top: 0.25rem;
+      left: 1rem;
+      font-size: 5rem; }
+  .info code {
+    display: block;
+    font-family: Courier;
+    background-color: black;
+    color: white;
+    padding: 1rem; }
+  .info li {
+    cursor: pointer; }

@@ -1,0 +1,46 @@
+.info 
+  box-sizing: border-box
+  width: calc(100% - 10px)
+  +for-desktop-up
+    margin: 50px 100px
+    width: unset
+  img
+    max-width: 100%
+    +for-tablet-portrait-up
+      max-width: 50%
+    +for-desktop-up
+      max-width: 100%
+  h2
+    background-color: #f9e53a
+    margin-block-start: 5rem
+    padding: 1rem
+  h3
+    margin-block-start: 3rem
+    background-color: #000
+    color: #fff
+    padding: 0.5rem
+  blockquote
+    background-color: #642580
+    color: white
+    padding: 0.5rem 1rem 0.5rem 4rem
+    margin-right: 0
+    position: relative
+    a
+      color: white
+      &:hover
+        background-color: black
+    &::before
+      content: "?"
+      position: absolute
+      top: 0.25rem
+      left: 1rem
+      font-size: 5rem
+  code
+    // width: 600px
+    display: block
+    font-family: Courier
+    background-color: black
+    color: white
+    padding: 1rem
+  li
+    cursor: pointer
