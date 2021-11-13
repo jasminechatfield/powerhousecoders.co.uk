@@ -30,8 +30,12 @@ body {
         display: block; }
         body .site__container .logo__container a .logo__image {
           width: 100%;
-          max-width: 500px;
-          max-height: 500px; }
+          max-width: 300px;
+          max-height: 300px; }
+          @media (min-width: 1200px) {
+            body .site__container .logo__container a .logo__image {
+              max-width: 500px;
+              max-height: 500px; } }
       body .site__container .logo__container .supplementary__container {
         text-align: center; }
         @media (min-width: 1200px) {
@@ -134,11 +138,10 @@ form {
       left: 1rem;
       font-size: 5rem; }
   .info code {
+    max-width: 100%;
     display: block;
     font-family: Courier;
     background-color: black;
     color: white;
     padding: 1rem;
     overflow: scroll; }
-  .info li {
-    cursor: pointer; }

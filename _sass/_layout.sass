@@ -18,8 +18,11 @@ body
         display: block
         .logo__image
           width: 100%
-          max-width: 500px
-          max-height: 500px
+          max-width: 300px
+          max-height: 300px
+          +for-desktop-up
+            max-width: 500px
+            max-height: 500px
       .supplementary__container
         text-align: center
         +for-desktop-up
